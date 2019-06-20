@@ -6,5 +6,13 @@ pipeline {
         sh 'echo "woshilaiwande"'
       }
     }
+    stage('Test') {
+      environment {
+        CI = 'true'
+      }
+      steps {
+        sh 'echo "aaaaaaaaa"'
+      }
+    }
   }
 }
